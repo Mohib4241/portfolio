@@ -87,7 +87,17 @@ export const careerItems = [
   },
 ];
 
-export const projectItems = [
+export interface ProjectItem {
+  title: string;
+  category: string;
+  summary: string;
+  tools: string;
+  image: string;
+  alt: string;
+  link?: string;
+}
+
+export const projectItems: ProjectItem[] = [
   {
     title: "E-Commerce Platform",
     category: "Full Stack Project",
